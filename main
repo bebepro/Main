@@ -1,7 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
 
 local UI = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
@@ -10,6 +6,8 @@ local TextButton = Instance.new("TextButton")
 local TextButton_2 = Instance.new("TextButton")
 local TextButton_3 = Instance.new("TextButton")
 local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
 
 --Properties:
 
@@ -81,16 +79,38 @@ TextButton_4.Text = "ShadowGui"
 TextButton_4.TextColor3 = Color3.fromRGB(231, 50, 5)
 TextButton_4.TextSize = 34.000
 
+TextButton_5.Parent = Main
+TextButton_5.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.323037326, 0, 0.233600006, 0)
+TextButton_5.Size = UDim2.new(0, 200, 0, 50)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Tool Position"
+TextButton_5.TextColor3 = Color3.fromRGB(231, 50, 5)
+TextButton_5.TextSize = 34.000
+
+TextButton_6.Parent = Main
+TextButton_6.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.BorderSizePixel = 0
+TextButton_6.Position = UDim2.new(0.622908652, 0, 0.233600006, 0)
+TextButton_6.Size = UDim2.new(0, 200, 0, 50)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "Skin Changer"
+TextButton_6.TextColor3 = Color3.fromRGB(231, 50, 5)
+TextButton_6.TextSize = 34.000
+
 -- Scripts:
 
-local function PRSDR_fake_script() -- Main.LocalScript 
+local function YVSTD_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(PRSDR_fake_script)()
-local function THAVJVH_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(YVSTD_fake_script)()
+local function JRZCL_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -109,16 +129,16 @@ local function THAVJVH_fake_script() -- TextButton.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
 	end)
 end
-coroutine.wrap(THAVJVH_fake_script)()
-local function IEDMJLZ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(JRZCL_fake_script)()
+local function UFQWCDR_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cool5013/TBO/main/TBOscript'))()
 	end)
 end
-coroutine.wrap(IEDMJLZ_fake_script)()
-local function LTTBW_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(UFQWCDR_fake_script)()
+local function ZIBNQ_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -126,12 +146,33 @@ local function LTTBW_fake_script() -- TextButton_3.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/bebepro/script/refs/heads/main/script"))()
 	end)
 end
-coroutine.wrap(LTTBW_fake_script)()
-local function TXAAQC_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(ZIBNQ_fake_script)()
+local function YDFOTU_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/faisal1432152/shadow-gui/main/shadowgui"))()
 	end)
 end
-coroutine.wrap(TXAAQC_fake_script)()
+coroutine.wrap(YDFOTU_fake_script)()
+local function INYNZ_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local plr = game.Players.LocalPlayer
+		local tool = plr.Character:FindFirstChildOfClass("Tool")
+	
+		tool.Parent = plr.Backpack
+		tool.GripPos = Vector3.new(0,-9,-3) --put numbers in there where it says 0,5,0 replace them with your own to make the tool move
+		tool.Parent = plr.Character
+	end)
+end
+coroutine.wrap(INYNZ_fake_script)()
+local function VPHH_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/bebepro/script2-skin/refs/heads/main/script2%20skin"))()
+	end)
+end
+coroutine.wrap(VPHH_fake_script)()
