@@ -13,7 +13,6 @@ local TextButton_4 = Instance.new("TextButton")
 local TextButton_5 = Instance.new("TextButton")
 local TextButton_6 = Instance.new("TextButton")
 local TextButton_7 = Instance.new("TextButton")
-local TextButton_8 = Instance.new("TextButton")
 
 --Properties:
 
@@ -105,39 +104,28 @@ TextButton_6.Text = "Skin Changer"
 TextButton_6.TextColor3 = Color3.fromRGB(231, 50, 5)
 TextButton_6.TextSize = 34.000
 
-TextButton_7.Parent = Frame
-TextButton_7.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_7.Parent = ScreenGui
+TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_7.BorderSizePixel = 0
-TextButton_7.Position = UDim2.new(0.0283140279, 0, 0.342400014, 0)
-TextButton_7.Size = UDim2.new(0, 200, 0, 50)
+TextButton_7.Position = UDim2.new(-0.144714043, 0, 0.512158036, 0)
+TextButton_7.Size = UDim2.new(0, 167, 0, 1)
+TextButton_7.Visible = false
 TextButton_7.Font = Enum.Font.SourceSans
-TextButton_7.Text = "Desync"
-TextButton_7.TextColor3 = Color3.fromRGB(231, 50, 5)
-TextButton_7.TextSize = 34.000
-
-TextButton_8.Parent = ScreenGui
-TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_8.BorderSizePixel = 0
-TextButton_8.Position = UDim2.new(-0.144714043, 0, 0.512158036, 0)
-TextButton_8.Size = UDim2.new(0, 167, 0, 1)
-TextButton_8.Visible = false
-TextButton_8.Font = Enum.Font.SourceSans
-TextButton_8.Text = ""
-TextButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_8.TextSize = 14.000
+TextButton_7.Text = ""
+TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.TextSize = 14.000
 
 -- Scripts:
 
-local function PUPX_fake_script() -- Frame.LocalScript 
+local function MCSP_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(PUPX_fake_script)()
-local function VJCJT_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(MCSP_fake_script)()
+local function WKVY_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -156,16 +144,16 @@ local function VJCJT_fake_script() -- TextButton.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
 	end)
 end
-coroutine.wrap(VJCJT_fake_script)()
-local function YLOPDJR_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(WKVY_fake_script)()
+local function DBMWFOM_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cool5013/TBO/main/TBOscript'))()
 	end)
 end
-coroutine.wrap(YLOPDJR_fake_script)()
-local function UOGU_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(DBMWFOM_fake_script)()
+local function LXUQLL_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -173,16 +161,16 @@ local function UOGU_fake_script() -- TextButton_3.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/bebepro/script/refs/heads/main/script"))()
 	end)
 end
-coroutine.wrap(UOGU_fake_script)()
-local function CSTP_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(LXUQLL_fake_script)()
+local function ZOKZUT_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/faisal1432152/shadow-gui/main/shadowgui"))()
 	end)
 end
-coroutine.wrap(CSTP_fake_script)()
-local function DGUO_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(ZOKZUT_fake_script)()
+local function JJRKDE_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -194,28 +182,20 @@ local function DGUO_fake_script() -- TextButton_5.LocalScript
 		tool.Parent = plr.Character
 	end)
 end
-coroutine.wrap(DGUO_fake_script)()
-local function QPPUYMO_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(JJRKDE_fake_script)()
+local function SGYJV_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/bebepro/script2-skin/refs/heads/main/script2%20skin"))()
 	end)
 end
-coroutine.wrap(QPPUYMO_fake_script)()
-local function CVBDUI_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(SGYJV_fake_script)()
+local function NTUPXJ_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://floopie.uk/projects/scripts/DaHood/Desync.lua"))()
-	end)
-end
-coroutine.wrap(CVBDUI_fake_script)()
-local function SSPRX_fake_script() -- TextButton_8.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_8)
-
 	local frame = script.Parent.Parent.Frame --in the .frame - you should need to change it what is your frame name.
-	local hotkey = Enum.KeyCode.RightShift --Change your keybind you want.
+	local hotkey = Enum.KeyCode.LeftAlt --Change your keybind you want.
 	
 	local UIS = game:GetService("UserInputService")
 	local open = false
@@ -236,4 +216,4 @@ local function SSPRX_fake_script() -- TextButton_8.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SSPRX_fake_script)()
+coroutine.wrap(NTUPXJ_fake_script)()
