@@ -1,0 +1,137 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local UI = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+
+--Properties:
+
+UI.Name = "UI"
+UI.Parent = game.CoreGui
+UI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+UI.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = UI
+Main.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Main.BorderColor3 = Color3.fromRGB(223, 111, 31)
+Main.BorderSizePixel = 3
+Main.Position = UDim2.new(0.232533798, 0, 0.0394802392, 0)
+Main.Size = UDim2.new(0, 777, 0, 625)
+
+title.Name = "title"
+title.Parent = Main
+title.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+title.BorderColor3 = Color3.fromRGB(168, 168, 168)
+title.BorderSizePixel = 0
+title.Size = UDim2.new(0, 777, 0, 30)
+title.Font = Enum.Font.Nunito
+title.Text = "FeFire Betaa"
+title.TextColor3 = Color3.fromRGB(231, 50, 5)
+title.TextSize = 28.000
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0283140279, 0, 0.119999997, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Azure Modded"
+TextButton.TextColor3 = Color3.fromRGB(231, 50, 5)
+TextButton.TextSize = 34.000
+
+TextButton_2.Parent = Main
+TextButton_2.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.323037326, 0, 0.119999997, 0)
+TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "TBO"
+TextButton_2.TextColor3 = Color3.fromRGB(231, 50, 5)
+TextButton_2.TextSize = 34.000
+
+TextButton_3.Parent = Main
+TextButton_3.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.622908652, 0, 0.119999997, 0)
+TextButton_3.Size = UDim2.new(0, 200, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "ShitHook"
+TextButton_3.TextColor3 = Color3.fromRGB(231, 50, 5)
+TextButton_3.TextSize = 34.000
+
+TextButton_4.Parent = Main
+TextButton_4.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.0283140279, 0, 0.233600006, 0)
+TextButton_4.Size = UDim2.new(0, 200, 0, 50)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "ShadowGui"
+TextButton_4.TextColor3 = Color3.fromRGB(231, 50, 5)
+TextButton_4.TextSize = 34.000
+
+-- Scripts:
+
+local function PRSDR_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(PRSDR_fake_script)()
+local function THAVJVH_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	 --[[
+	█▄░█ █▀▀ █▄▄ █░█ █░░ ▄▀█  █▀ █▀█ ▄▀█ █▀▀ █▀▀
+	█░▀█ ██▄ █▄█ █▄█ █▄▄ █▀█  ▄█ █▀▀ █▀█ █▄▄ ██▄
+	█▄░█ █▀▀ █▄▄ █░█ █░░ ▄▀█  █▀ █▀█ ▄▀█ █▀▀ █▀▀
+	█░▀█ ██▄ █▄█ █▄█ █▄▄ █▀█  ▄█ █▀▀ █▀█ █▄▄ ██▄
+	█▄░█ █▀▀ █▄▄ █░█ █░░ ▄▀█  █▀ █▀█ ▄▀█ █▀▀ █▀▀
+	█░▀█ ██▄ █▄█ █▄█ █▄▄ █▀█  ▄█ █▀▀ █▀█ █▄▄ ██▄
+	█▄░█ █▀▀ █▄▄ █░█ █░░ ▄▀█  █▀ █▀█ ▄▀█ █▀▀ █▀▀
+	█░▀█ ██▄ █▄█ █▄█ █▄▄ █▀█  ▄█ █▀▀ █▀█ █▄▄ ██▄
+	█▄░█ █▀▀ █▄▄ █░█ █░░ ▄▀█  █▀ █▀█ ▄▀█ █▀▀ █▀▀
+	█░▀█ ██▄ █▄█ █▄█ █▄▄ █▀█  ▄█ █▀▀ █▀█ █▄▄ ██▄
+	--]]
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
+	end)
+end
+coroutine.wrap(THAVJVH_fake_script)()
+local function IEDMJLZ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/cool5013/TBO/main/TBOscript'))()
+	end)
+end
+coroutine.wrap(IEDMJLZ_fake_script)()
+local function LTTBW_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/bebepro/script/refs/heads/main/script"))()
+	end)
+end
+coroutine.wrap(LTTBW_fake_script)()
+local function TXAAQC_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/faisal1432152/shadow-gui/main/shadowgui"))()
+	end)
+end
+coroutine.wrap(TXAAQC_fake_script)()
