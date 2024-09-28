@@ -1,5 +1,5 @@
 local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-function MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
+function pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
 
 data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
 
@@ -8,27 +8,31 @@ data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) i
 
 
 
-local ScreenGui = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('UYmwfWfzurgzUzMYRVyMAlOZinJFkWNvduVeFsXFtXIthZhgkvToYPMU2NyZWVuR3Vp'))
-local Frame = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('ZTKnJrwnEfsCBLuTqlqUxNiZZJWjHUPSUIFhKEakmvbTJRbHKNbledbRnJhbWU='))
-local title = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('kUygaWySzwbcJWAcdsjVTdCeYCPVAfNAfCSVgjcBXQIDPkkUmHoEcBuVGV4dExhYmVs'))
-local UniversalFramebut = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('zupINBwGJOwexdOwmdRGPSeEssOZxPWFIUSGvnGsXmGJbznffVAlqiVVGV4dEJ1dHRvbg=='))
-local MainFramebut = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('sloJCLKkACQINWnLzVAyvYPrNbvFbAmqZqfwmYJgKoXftHFogcvWIspVGV4dEJ1dHRvbg=='))
-local ImageLabel = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('gDWFUQoxYRmxMGLyBwVeZAKddhdcCnYdhKKcBSBgyfNGJqaXUXVkaeISW1hZ2VMYWJlbA=='))
-local MainFrame = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('IeSBGkuoaxfGcJXVsAPxEAgETkCjloDhkeYDeuSKCVntbxjnpuBaXhfRnJhbWU='))
-local TextButton = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('djtOGiTUcprTEDyqFuCiyUgiLjKxHNJwzUBjYsYLTQRrTeqDutQSEFcVGV4dEJ1dHRvbg=='))
-local TextButton_2 = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('tpJFEJtbFDAQLEDpMuCtLlystczPFrVIIFNNxKwtggTUvHvGsWKMssoVGV4dEJ1dHRvbg=='))
-local TextButton_3 = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('TzLTAlneuvIgAKQrCBtXKsICKRJwDiJDjQdTYUYQSUQGQEufgUyFmOPVGV4dEJ1dHRvbg=='))
-local TextButton_4 = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('UkduGOByyMNlzdgIBPjAskNmbMNEBmZGapYfZLnlqFFvzLUKTOtunReVGV4dEJ1dHRvbg=='))
-local TextButton_5 = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('XwUOwoghRmPmkKaIxXmoDUyuOYOUubMKCSHItlzTbVVjUztdKBrwsBuVGV4dEJ1dHRvbg=='))
-local TextButton_6 = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('pQnhbmLKlhOlpiAPkjbFVWhIHhvnFcchYCXlbgHpYhleElkNqArvYFGVGV4dEJ1dHRvbg=='))
-local UniversalFrame = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('NVcwATMsxIgBUVncoMAizYuWOoqBXMStnbcCTZhxLooliSLWeNvxpPCRnJhbWU='))
-local TextButton_7 = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('EDGklmfeMDideHRFlsreOkfImTVLrlJkMerycviobfnomfWfCJSsdTiVGV4dEJ1dHRvbg=='))
-local TextButton_8 = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('dMUDFdifTUneWBtVORxjnjhlkewIodLADfERcSJFglNbkQbSJjKYqteVGV4dEJ1dHRvbg=='))
-local FunFrame = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('OSrInzDgynofKUkZgXjwEEbeXqASmXAJGDRVbPPzynzacRnPFJiEFkgRnJhbWU='))
-local TextButton_9 = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('QvSxfCtEGXbpbSGPMLRpShauBtBKYShxliMVruYSMdRGBKUAWjYhrUYVGV4dEJ1dHRvbg=='))
-local TextButton_10 = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('WICLKTQGmnFyCNkRuHUqMOzrAIqUBqghKEIjkELejXaNVsKbUCiCoejVGV4dEJ1dHRvbg=='))
-local FunFramebut = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('HLNUQnHEKqPwmryxrMywttchyZgqicznNXhkBgIlyDrAkMxQaiCqhLiVGV4dEJ1dHRvbg=='))
-local TextButton_11 = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('dUCSRpcAWcGJprzCimqQBmkEeZPosYfHHoRxRuFADaTgXZeDRsDvasoVGV4dEJ1dHRvbg=='))
+local ScreenGui = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('tetcNjNTSwVUxJqyjVdwIyybyLbvMmrZCRjRkgdLVvamsvDqQaAMoMQU2NyZWVuR3Vp'))
+local Frame = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('stDbJzPOPuQIlEjKcAUJUmfdptErcrkMSxVaiWCBqefootNxbIEOIqlRnJhbWU='))
+local title = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('dWTuDIUfphNmlBPlKwqZaATlKkHVabtpYsPccMolHluaKhrzqWNwCKoVGV4dExhYmVs'))
+local UniversalFramebut = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('aFJnnaCJhRDlJbdsMzaeTJAmDepGdbYzVdHLgezkvQJCYfzOLyyHxmBVGV4dEJ1dHRvbg=='))
+local MainFramebut = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('SQRBrBuYTeocMhPXWFNiqUPcRyDVcOSpEoIWWhxSOAxybmLuZmarTJiVGV4dEJ1dHRvbg=='))
+local MainFrame = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('wiuEimJdgrNyeJQTuzGKaMjkxhneoXsTYcxkBoOtXMfsSvmjROKyuiWRnJhbWU='))
+local TextButton = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('LYtAekZYqkrghGTPnXQWexZRYQGxEnHeNNHfwYVvMLndQaBQOPktDeQVGV4dEJ1dHRvbg=='))
+local UniversalFrame = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('nqSAtcRPbxtuAhgHluOereTXRuhGUBpgGPtxJhiAVKlvveqwkbDbqXfRnJhbWU='))
+local TextButton_2 = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('kILCbmuSjshqxpYGGnsgpuBDKkYcVyNfsaIinnIwbfXPNxegUQRhdyiVGV4dEJ1dHRvbg=='))
+local TextButton_3 = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('BNBjIQzQxMdFHHCwSLjzIgkbjcShwZztSncuvTIEYZHRxpEBvvanqvjVGV4dEJ1dHRvbg=='))
+local FunFrame = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('GRRRpLIPkuFlOJYxNkPGBlzFBgIGnsODaObmVsgkUaULpYwyhvXUOvwRnJhbWU='))
+local TextButton_4 = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('otUxYyMuthxLBrQTpcLKqtiJeAYRZUYfTMSTptEJrBprtjFcyWjXUIAVGV4dEJ1dHRvbg=='))
+local TextButton_5 = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('ZavXYYLlEMyvNUQWJDCvBDVhlKMCoNbazAsCchHpQfSLsgyVPfSayLwVGV4dEJ1dHRvbg=='))
+local FunFramebut = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('dLRqezRdUNGaIuHlOvRzxGTQzHKcnZnkEpisDRJcieqwsKQnqMCwilFVGV4dEJ1dHRvbg=='))
+local scriptFramebut = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('ohkXynVMcMAGTrdxnwdHXikjQCfEiIlbBHqNBjHzHejtqfOTUKSboKdVGV4dEJ1dHRvbg=='))
+local scriptFrame = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('mAlGYiKvEOEpEqtuehduFrAfbAfDVjFkzmbrivMldhovcCXfghNooKDRnJhbWU='))
+local TextButton_6 = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('IFEGCMRLCTFHWFurKpphZqnLMkNKHlOUofEWVeVtAphshOhMBNlWrGsVGV4dEJ1dHRvbg=='))
+local TextButton_7 = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('EplSgbIzPNjxRfHLlXhrwWzgljjxExNrejqFUBrMIXzVkIayNMtwEOcVGV4dEJ1dHRvbg=='))
+local TextButton_8 = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('ajISFFORsaemCJagmLLfoyhrxzOJRdeZCpiuSMvycrNlMcUhzUhAJeMVGV4dEJ1dHRvbg=='))
+local TextButton_9 = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('imsrVyqXABzMBIrfHikQmbckAxiZTiRQihQSELftQEUHLHbwHjClROvVGV4dEJ1dHRvbg=='))
+local TextButton_10 = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('noWJuTgSiNHlZheJcxOzbxXVzusMSljfBUEYMacLYUHzSPRCFcAwfuaVGV4dEJ1dHRvbg=='))
+local TextButton_11 = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('hlcHOikplowHROnrzzfBumHgpyyWqYIyyJryWtrSfiwMjXCgpOcxbsDVGV4dEJ1dHRvbg=='))
+local ImageLabel = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('QNvCwWIICIPxgLLJbFBAnJSqdCrLSavIdmXkMYLvubhsCweTnKWxynySW1hZ2VMYWJlbA=='))
+local TextButton_12 = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('esMtXoSxjrfQPiTBcjKpvyClfKjOUlhgvXGEPLJLpOCWBLSoXqJklIRVGV4dEJ1dHRvbg=='))
+local TextLabel = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('EujuzBjAYRjPFZjYcaIyCYbRPIsvqwNSMBFHvcQmwdtnQWCdLwjKRayVGV4dExhYmVs'))
 
 --Properties:
 
@@ -43,123 +47,61 @@ Frame.BorderSizePixel = 3
 Frame.Position = UDim2.new(0.230797663, 0, 0.0349209681, 0)
 Frame.Size = UDim2.new(0, 777, 0, 625)
 
-title.Name = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('JaKFDEjwKQRTRNyUjaCNzjeYSJYFbgVmZRvPNdNiEgQmsJZqZlORaIodGl0bGU=')
+title.Name = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('PyhKqBjMJRQdazOJABcVAMHoYWfJecDydmqyhjgyvhCAqMkukHQyUEMdGl0bGU=')
 title.Parent = Frame
 title.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 title.BorderColor3 = Color3.fromRGB(168, 168, 168)
 title.BorderSizePixel = 0
 title.Size = UDim2.new(0, 777, 0, 30)
 title.Font = Enum.Font.Ubuntu
-title.Text = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('TKBZhpbUVWRTZFewNVscDwNDOgfWTWyZoLDgidOjSBHwelpHEBawyVWRmVGaXJlIFJlY29kZQ==')
+title.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('kLQyvPZsRJuIwZIDnLTRqnKRsbgAnOvgvtWOHMlhcYAMUmKAHieiTWQRmVGaXJlIEJldGFh')
 title.TextColor3 = Color3.fromRGB(195, 195, 195)
 title.TextSize = 28.000
 
-UniversalFramebut.Name = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('ZSLbSddtraVfWcXYrcpFBDkhumHaoJnWDzmizhBJsAtJZBmqVADKFDkVW5pdmVyc2FsRnJhbWVidXQ=')
+UniversalFramebut.Name = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('HnYRUAvZvttOOlroICNAbrFoDuBWgfBRTgkhGfpdIwjpIWnNtIrsENnVW5pdmVyc2FsRnJhbWVidXQ=')
 UniversalFramebut.Parent = Frame
 UniversalFramebut.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 UniversalFramebut.BorderColor3 = Color3.fromRGB(0, 0, 0)
 UniversalFramebut.BorderSizePixel = 0
-UniversalFramebut.Position = UDim2.new(0, 0, 0.190400004, 0)
+UniversalFramebut.Position = UDim2.new(0, 0, 0.172800004, 0)
 UniversalFramebut.Size = UDim2.new(0, 107, 0, 89)
 UniversalFramebut.Font = Enum.Font.Ubuntu
-UniversalFramebut.Text = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('lycxJboXkfSgQsQdgmrXsFIUeDqffuBlZftCoDNVRRvkvdrtncgWDsCVW5pdmVyc2Fs')
+UniversalFramebut.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('klqxtgPRSQAxSArWjAghUJogshSNamCqInLdOTpmCChSriIOBwobXomVW5pdmVyc2Fs')
 UniversalFramebut.TextColor3 = Color3.fromRGB(195, 195, 195)
 UniversalFramebut.TextSize = 20.000
 
-MainFramebut.Name = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('MMIZaqZkgPOdRJIlEnpSsjIJnLsdanEWTZUUbMocXukFgfONWaYhgLKTWFpbkZyYW1lYnV0')
+MainFramebut.Name = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('OLWAiwphfrfaSHSRmKFBMyldpYgkVpVcSkbjWthnDoQVDXSzLvIVrDDTWFpbkZyYW1lYnV0')
 MainFramebut.Parent = Frame
 MainFramebut.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 MainFramebut.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MainFramebut.BorderSizePixel = 0
 MainFramebut.Position = UDim2.new(0, 0, 0.0480000004, 0)
-MainFramebut.Size = UDim2.new(0, 107, 0, 89)
+MainFramebut.Size = UDim2.new(0, 107, 0, 78)
 MainFramebut.Font = Enum.Font.Ubuntu
-MainFramebut.Text = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('vicRxPBoUVdvCdwNEijdygWOOmujEfYQGiyoStbAFmosfdxbUrurJyaTWFpbg==')
+MainFramebut.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('XHkppduKSSuTCpfLzWpoDmJUocJSiZdOPzsHENxiJOmZyubebQyEqngTWFpbg==')
 MainFramebut.TextColor3 = Color3.fromRGB(195, 195, 195)
 MainFramebut.TextSize = 20.000
 
-ImageLabel.Parent = Frame
-ImageLabel.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel.BorderSizePixel = 0
-ImageLabel.Size = UDim2.new(0, 43, 0, 30)
-ImageLabel.Image = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('bJBOXHqdJVEkoWDHbQbxiyESwplMZyzwvCkBwiCbDAwytEZrptAeChIcmJ4YXNzZXRpZDovLzUxNDMxMjI2ODU=')
-
-MainFrame.Name = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('CwYzmBKkqsMrjTXAJTucdyoLmHJigyOughVNzKVbuyjZnbpinbbkvoCTWFpbkZyYW1l')
+MainFrame.Name = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('hFwYHrRFLGnJUQVdaCuQefwJPtnjEhHHvTNaoZSixMWCZzZQnmMujIBTWFpbkZyYW1l')
 MainFrame.Parent = Frame
 MainFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.137709141, 0, 0.0608000495, 0)
-MainFrame.Size = UDim2.new(0, 664, 0, 578)
+MainFrame.Position = UDim2.new(0.148005143, 0, 0.0608000495, 0)
+MainFrame.Size = UDim2.new(0, 656, 0, 578)
 
 TextButton.Parent = MainFrame
 TextButton.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.668009937, 0, 0.201600015, 0)
-TextButton.Size = UDim2.new(0, 172, 0, 50)
+TextButton.Position = UDim2.new(0.0589404739, 0, 0.0358366668, 0)
+TextButton.Size = UDim2.new(0, 181, 0, 50)
 TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('IWFDKrlNeoiRZtcvwSKjmLXbYJCNvhHUxaVfNBjbTeVWpkPWHoTZTenU2tpbiBDaGFuZ2Vy')
+TextButton.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('lAyaspKSjNtuSZUnaZMkCPjFjgvDoNscYCEcCVhnrdKidIyTtgZCObTUmFuZG9tIFRwIChZKQ==')
 TextButton.TextColor3 = Color3.fromRGB(231, 50, 5)
-TextButton.TextSize = 34.000
+TextButton.TextSize = 30.000
 
-TextButton_2.Parent = MainFrame
-TextButton_2.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.128512099, 0, 0.201600015, 0)
-TextButton_2.Size = UDim2.new(0, 166, 0, 50)
-TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('CwCETkmSrgkPHfIpBNmoQYwiwUxWaWtEtzAZSWbDitdkJvfwYcxsFxcU2hhZG93R3Vp')
-TextButton_2.TextColor3 = Color3.fromRGB(231, 50, 5)
-TextButton_2.TextSize = 34.000
-
-TextButton_3.Parent = MainFrame
-TextButton_3.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_3.BorderSizePixel = 0
-TextButton_3.Position = UDim2.new(0.4098441, 0, 0.0911999866, 0)
-TextButton_3.Size = UDim2.new(0, 151, 0, 50)
-TextButton_3.Font = Enum.Font.SourceSans
-TextButton_3.Text = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('wluwGmklsUFmkEHtPszqNWLWDmZlyredeSUeaupeSZaDpgcLwzdQEmQVEJP')
-TextButton_3.TextColor3 = Color3.fromRGB(231, 50, 5)
-TextButton_3.TextSize = 34.000
-
-TextButton_4.Parent = MainFrame
-TextButton_4.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_4.BorderSizePixel = 0
-TextButton_4.Position = UDim2.new(0.668009937, 0, 0.0911999866, 0)
-TextButton_4.Size = UDim2.new(0, 172, 0, 50)
-TextButton_4.Font = Enum.Font.SourceSans
-TextButton_4.Text = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('OumLRduxwTMHKdguEExhtgnJtwvfQzPzjcbJxsvATFaZfNySeuElSMlU2hpdEhvb2s=')
-TextButton_4.TextColor3 = Color3.fromRGB(231, 50, 5)
-TextButton_4.TextSize = 34.000
-
-TextButton_5.Parent = MainFrame
-TextButton_5.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_5.BorderSizePixel = 0
-TextButton_5.Position = UDim2.new(0.128512099, 0, 0.0911999866, 0)
-TextButton_5.Size = UDim2.new(0, 166, 0, 50)
-TextButton_5.Font = Enum.Font.SourceSans
-TextButton_5.Text = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('fBAWOzskIDJHOZMvXZNpbTDDbDrYDdPNdWIZsCZEOsZqaWLZjbddTMAQXp1cmUgTW9kZGVk')
-TextButton_5.TextColor3 = Color3.fromRGB(231, 50, 5)
-TextButton_5.TextSize = 33.000
-
-TextButton_6.Parent = MainFrame
-TextButton_6.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-TextButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_6.BorderSizePixel = 0
-TextButton_6.Position = UDim2.new(0.4098441, 0, 0.201600015, 0)
-TextButton_6.Size = UDim2.new(0, 151, 0, 50)
-TextButton_6.Font = Enum.Font.SourceSans
-TextButton_6.Text = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('oklrYqQZpscNbriPxDEKZpbbmxbQMLszdWccUoxhYBacJHQGoevGEZkVG9vbCBQb3NpdGlvbg==')
-TextButton_6.TextColor3 = Color3.fromRGB(231, 50, 5)
-TextButton_6.TextSize = 32.000
-
-UniversalFrame.Name = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('XMgfHiBKwMqWCgMZfNjLcFGgnZSrGwGNrBzEzneROYWEEJkcgkyQrWEVW5pdmVyc2FsRnJhbWU=')
+UniversalFrame.Name = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('CAsmltuqXcBsqyUaIPOshUlhvDSwQqSxqAiCeFhCAclgQwHAzlToPZAVW5pdmVyc2FsRnJhbWU=')
 UniversalFrame.Parent = Frame
 UniversalFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 UniversalFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -168,29 +110,29 @@ UniversalFrame.Position = UDim2.new(0.151866153, 0, 0.0592000484, 0)
 UniversalFrame.Size = UDim2.new(0, 651, 0, 579)
 UniversalFrame.Visible = false
 
-TextButton_7.Parent = UniversalFrame
-TextButton_7.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-TextButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_7.BorderSizePixel = 0
-TextButton_7.Position = UDim2.new(0.0955287367, 0, 0.0547951795, 0)
-TextButton_7.Size = UDim2.new(0, 204, 0, 50)
-TextButton_7.Font = Enum.Font.SourceSans
-TextButton_7.Text = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('IDjEYHFbnlruQUUylFqonSGNyeuUIOzqMIssWaNDtFyEwqGsPMqIMwQYXdhaXRpbmcgYSByZWNvZGU=')
-TextButton_7.TextColor3 = Color3.fromRGB(231, 50, 5)
-TextButton_7.TextSize = 34.000
+TextButton_2.Parent = UniversalFrame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.0955287367, 0, 0.0547951795, 0)
+TextButton_2.Size = UDim2.new(0, 204, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('kHLYdCwnrKiXOngsHZDSACPmdegsSAjDkooURWuUsOWaaukPDwRogxCYXdhaXRpbmcgYSByZWNvZGU=')
+TextButton_2.TextColor3 = Color3.fromRGB(231, 50, 5)
+TextButton_2.TextSize = 34.000
 
-TextButton_8.Parent = UniversalFrame
-TextButton_8.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-TextButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_8.BorderSizePixel = 0
-TextButton_8.Position = UDim2.new(0.0955287367, 0, 0.173966169, 0)
-TextButton_8.Size = UDim2.new(0, 166, 0, 50)
-TextButton_8.Font = Enum.Font.SourceSans
-TextButton_8.Text = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('OOtfLPpSLsdYQdPnAbqVWIbPAhDlOfLMmZfUSJYuElylouggzsOPmslZm9yY2UgcmVzZXQ=')
-TextButton_8.TextColor3 = Color3.fromRGB(231, 50, 5)
-TextButton_8.TextSize = 34.000
+TextButton_3.Parent = UniversalFrame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.0955287367, 0, 0.173966169, 0)
+TextButton_3.Size = UDim2.new(0, 166, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('rdNXxMuLrFDZswLKmywPpgVLkMMWaDCfoUozxhWSsPujMzNoRFxbvYtZm9yY2UgcmVzZXQ=')
+TextButton_3.TextColor3 = Color3.fromRGB(231, 50, 5)
+TextButton_3.TextSize = 34.000
 
-FunFrame.Name = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('pEdMIkarklmEUAEuZztiZjJNvCNkyOamrauYOwJiJUpyKvHUzWovTlaRnVuRnJhbWU=')
+FunFrame.Name = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('LbuwSNlbUFUBOsEVtCXuKSsTGsujSaaDazUQDjGEwpnqmxuLGYgAFPCRnVuRnJhbWU=')
 FunFrame.Parent = Frame
 FunFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 FunFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -199,118 +141,302 @@ FunFrame.Position = UDim2.new(0.149292156, 0, 0.0608000495, 0)
 FunFrame.Size = UDim2.new(0, 655, 0, 580)
 FunFrame.Visible = false
 
-TextButton_9.Parent = FunFrame
-TextButton_9.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-TextButton_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_9.BorderSizePixel = 0
-TextButton_9.Position = UDim2.new(0.126827508, 0, 0.0671172589, 0)
-TextButton_9.Size = UDim2.new(0, 166, 0, 50)
-TextButton_9.Font = Enum.Font.SourceSans
-TextButton_9.Text = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('utfTggIytQKIcDXBVyzsjioRYgypPwmkKBVsoMvPLJezaZbWGlqPnqJbGVnaW9uIGNvbnRyb2w=')
-TextButton_9.TextColor3 = Color3.fromRGB(231, 50, 5)
-TextButton_9.TextSize = 34.000
+TextButton_4.Parent = FunFrame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.126827508, 0, 0.0671172589, 0)
+TextButton_4.Size = UDim2.new(0, 166, 0, 50)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('KsaoELxoeQgArxclrZMzKErMWBHlRXseikbanQaeScEniRfsEyYUvmmbGVnaW9uIGNvbnRyb2w=')
+TextButton_4.TextColor3 = Color3.fromRGB(231, 50, 5)
+TextButton_4.TextSize = 30.000
 
-TextButton_10.Parent = FunFrame
-TextButton_10.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-TextButton_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_10.BorderSizePixel = 0
-TextButton_10.Position = UDim2.new(0.126827508, 0, 0.184358642, 0)
-TextButton_10.Size = UDim2.new(0, 166, 0, 50)
-TextButton_10.Font = Enum.Font.SourceSans
-TextButton_10.Text = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('ulqmWoXFbGgZgPJKCfYpnUlipnWjPCSLkslpypZyIFEcyUZgKRPBFnJZmxvb3BpZSBjb250cm9s')
-TextButton_10.TextColor3 = Color3.fromRGB(231, 50, 5)
-TextButton_10.TextSize = 34.000
+TextButton_5.Parent = FunFrame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.126827508, 0, 0.184358642, 0)
+TextButton_5.Size = UDim2.new(0, 166, 0, 50)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('XscOlCrnUulHVaamApJcwaJNFyrJRGcXBqsnUZeoBAHQVCGtHvCOLeSZmxvb3BpZSBjb250cm9s')
+TextButton_5.TextColor3 = Color3.fromRGB(231, 50, 5)
+TextButton_5.TextSize = 30.000
 
-FunFramebut.Name = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('hdalvDvFHbERBLBqmXYdxOmfHrwfKjPUNZStMZJpsELepZyOtOkiMHYRnVuRnJhbWVidXQ=')
+FunFramebut.Name = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('bEhYcHpSBAdgphyOXHicMsWiHvumbDBHjIMAUzstjkBgVzSzGFJYZOfRnVuRnJhbWVidXQ=')
 FunFramebut.Parent = Frame
 FunFramebut.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 FunFramebut.BorderColor3 = Color3.fromRGB(0, 0, 0)
 FunFramebut.BorderSizePixel = 0
-FunFramebut.Position = UDim2.new(0, 0, 0.332800001, 0)
-FunFramebut.Size = UDim2.new(0, 107, 0, 89)
+FunFramebut.Position = UDim2.new(0, 0, 0.315200001, 0)
+FunFramebut.Size = UDim2.new(0, 107, 0, 78)
 FunFramebut.Font = Enum.Font.Ubuntu
-FunFramebut.Text = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('nYpXuFMpZTBSFmiLCbDQdNjWTHpLKrRQwXJPyMSqHSVDFSTkvydSZenZnVuIHN0dWZm')
+FunFramebut.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('KoqYUgeLyeihmzSxJIlLbiNUMPJOlCyBsvurYQCSOIfCQcbsIZHfucCZnVuIHN0dWZm')
 FunFramebut.TextColor3 = Color3.fromRGB(195, 195, 195)
 FunFramebut.TextSize = 20.000
 
-TextButton_11.Parent = ScreenGui
-TextButton_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+scriptFramebut.Name = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('HfNhrLsefCkhtWDaPzQndsUFNGjXcrriwcLKfvCbcYZXlRBqChNGgDqc2NyaXB0RnJhbWVidXQ=')
+scriptFramebut.Parent = Frame
+scriptFramebut.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+scriptFramebut.BorderColor3 = Color3.fromRGB(0, 0, 0)
+scriptFramebut.BorderSizePixel = 0
+scriptFramebut.Position = UDim2.new(0, 0, 0.875199974, 0)
+scriptFramebut.Size = UDim2.new(0, 107, 0, 78)
+scriptFramebut.Font = Enum.Font.Ubuntu
+scriptFramebut.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('nSiYRqbAayyeviLQpyFqjkOIjSIFyQADvcAfCBLzHmtEwznTYuDHdRsc2NyaXB0cw==')
+scriptFramebut.TextColor3 = Color3.fromRGB(195, 195, 195)
+scriptFramebut.TextSize = 20.000
+
+scriptFrame.Name = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('dIsgQolIMSemiEBYmHWfUnoEIoyHUtsKAVkDBYXAZYPvzJydcQUdFuzc2NyaXB0RnJhbWU=')
+scriptFrame.Parent = Frame
+scriptFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+scriptFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+scriptFrame.BorderSizePixel = 0
+scriptFrame.Position = UDim2.new(0.150579154, 0, 0.0608000495, 0)
+scriptFrame.Size = UDim2.new(0, 654, 0, 578)
+scriptFrame.Visible = false
+
+TextButton_6.Parent = scriptFrame
+TextButton_6.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.BorderSizePixel = 0
+TextButton_6.Position = UDim2.new(0.128512099, 0, 0.0911999866, 0)
+TextButton_6.Size = UDim2.new(0, 166, 0, 50)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('fLtYnJPAOCAYaOmwwsBUEnclgzmZuDEhizoGqwMGzkHrZbZqVHPYSPYQXp1cmUgTW9kZGVk')
+TextButton_6.TextColor3 = Color3.fromRGB(231, 50, 5)
+TextButton_6.TextSize = 30.000
+
+TextButton_7.Parent = scriptFrame
+TextButton_7.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.BorderSizePixel = 0
+TextButton_7.Position = UDim2.new(0.4098441, 0, 0.0911999866, 0)
+TextButton_7.Size = UDim2.new(0, 151, 0, 50)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('UtuCqKSnctqrXAcnkvhwWhhAGAECVUrYgoZaJevdwVxTUXPgvAmQNOnVEJP')
+TextButton_7.TextColor3 = Color3.fromRGB(231, 50, 5)
+TextButton_7.TextSize = 30.000
+
+TextButton_8.Parent = scriptFrame
+TextButton_8.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.BorderSizePixel = 0
+TextButton_8.Position = UDim2.new(0.128512099, 0, 0.201600015, 0)
+TextButton_8.Size = UDim2.new(0, 166, 0, 50)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('sXHxqXlDmwqsQIsThaKrNSPnokiRMdjncIdOuKSMleQTLNqOmIUdnTEU2hhZG93R3Vp')
+TextButton_8.TextColor3 = Color3.fromRGB(231, 50, 5)
+TextButton_8.TextSize = 30.000
+
+TextButton_9.Parent = scriptFrame
+TextButton_9.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.BorderSizePixel = 0
+TextButton_9.Position = UDim2.new(0.4098441, 0, 0.201600015, 0)
+TextButton_9.Size = UDim2.new(0, 151, 0, 50)
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('ynsTrqHICdGHLCHdoVnIoEjNhSwJlIbeRNxPdqiqqSWtejMDUGsNgfmVG9vbCBQb3NpdGlvbg==')
+TextButton_9.TextColor3 = Color3.fromRGB(231, 50, 5)
+TextButton_9.TextSize = 30.000
+
+TextButton_10.Parent = scriptFrame
+TextButton_10.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_10.BorderSizePixel = 0
+TextButton_10.Position = UDim2.new(0.668009937, 0, 0.0911999866, 0)
+TextButton_10.Size = UDim2.new(0, 172, 0, 50)
+TextButton_10.Font = Enum.Font.SourceSans
+TextButton_10.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('GGBhdHzNRyHnlNQXJecPnCknbDFlcGZAPfpIAFTOjHMAZqzZtbDaBXgU2hpdEhvb2s=')
+TextButton_10.TextColor3 = Color3.fromRGB(231, 50, 5)
+TextButton_10.TextSize = 30.000
+
+TextButton_11.Parent = scriptFrame
+TextButton_11.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 TextButton_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_11.BorderSizePixel = 0
-TextButton_11.Position = UDim2.new(-0.144714043, 0, 0.512158036, 0)
-TextButton_11.Size = UDim2.new(0, 167, 0, 1)
-TextButton_11.Visible = false
+TextButton_11.Position = UDim2.new(0.668009937, 0, 0.201600015, 0)
+TextButton_11.Size = UDim2.new(0, 172, 0, 50)
 TextButton_11.Font = Enum.Font.SourceSans
-TextButton_11.Text = MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('eoYlXYPElcnTJIjuAttONVaUbbxhPegfIllbUfMdfCGgKdNFudLkMDe')
-TextButton_11.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_11.TextSize = 14.000
+TextButton_11.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('KYDspPXWzNpQvpdkzcEKOWIDJdnjaZCTOEBfMpaOycNLWpMxvKiYPujU2tpbiBDaGFuZ2Vy')
+TextButton_11.TextColor3 = Color3.fromRGB(231, 50, 5)
+TextButton_11.TextSize = 30.000
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Size = UDim2.new(0, 36, 0, 30)
+ImageLabel.Image = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('HlpWnQNdtFnwNFHnJTYgPGvlpPYgrhUnanBuRRYxpnzAuWeHOdXzcWCcmJ4YXNzZXRpZDovLzUxNDMxMjI2ODU=')
+
+TextButton_12.Parent = ScreenGui
+TextButton_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_12.BorderSizePixel = 0
+TextButton_12.Position = UDim2.new(-0.144714043, 0, 0.512158036, 0)
+TextButton_12.Size = UDim2.new(0, 167, 0, 1)
+TextButton_12.Visible = false
+TextButton_12.Font = Enum.Font.SourceSans
+TextButton_12.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('uwpJdnavYIDnfgwbWTxLsSLRyxiHQfkcrIXuoJqDEuxRqKYhDjliLWE')
+TextButton_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_12.TextSize = 14.000
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.181999996, 0, -0.0199999996, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 24)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('nADipjDllhSqUVNJQAmlfVhAaFoZcbxTxdNntbaVzDqRcYUKJCSWamTRmVGaXJlICB8ICBCdWlsZDogIERldmVsb3Blcg==')
+TextLabel.TextColor3 = Color3.fromRGB(195, 195, 195)
+TextLabel.TextSize = 16.000
 
 -- Scripts:
 
-local function TJMUH_fake_script() -- Frame.LocalScript 
-	local script = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('sOessSleEtJQtaqBzEOpithknKEqhUqRIQCuqsQlgqRHbdECoQEYeHzTG9jYWxTY3JpcHQ='), Frame)
+local function OWMK_fake_script() -- Frame.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('SDdKJITGBLXJJDHdKNcQvlnGtpYaxHyyGLKNowRTpRDeKOZgvNxjOHbTG9jYWxTY3JpcHQ='), Frame)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(TJMUH_fake_script)()
-local function MPADOO_fake_script() -- UniversalFramebut.LocalScript 
-	local script = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('uTByVdxWIUoXriWGeimlRzIxRyihcjuuMnrrGwxJoTDPBPxyXaETnHUTG9jYWxTY3JpcHQ='), UniversalFramebut)
+coroutine.wrap(OWMK_fake_script)()
+local function FWUHPFT_fake_script() -- UniversalFramebut.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('CpwcoeXGokMjYnFxFVNuLGayvuNhPJyYjcsSDKgdVvEfhDIbcsksVvrTG9jYWxTY3JpcHQ='), UniversalFramebut)
 
 	script.Parent.MouseButton1Click:connect(function()
 		script.Parent.Parent.MainFrame.Visible = false
 		script.Parent.Parent.UniversalFrame.Visible = true
 		script.Parent.Parent.FunFrame.Visible = false
+		script.Parent.Parent.scriptFrame.Visible = false
 		wait(0.1)
 	end)
 end
-coroutine.wrap(MPADOO_fake_script)()
-local function RVMUUGZ_fake_script() -- MainFramebut.LocalScript 
-	local script = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('ptsBiBAsInaKpytejxrYMWuikbFnaZCshAgKznboVzuunkulcoMKBZITG9jYWxTY3JpcHQ='), MainFramebut)
+coroutine.wrap(FWUHPFT_fake_script)()
+local function UFIM_fake_script() -- MainFramebut.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('WnZGKYdoCJtpNvcqgTWyLiUeKnfZOVoZfHAmmUBGcURdwXZGHjwOpIwTG9jYWxTY3JpcHQ='), MainFramebut)
 
 	script.Parent.MouseButton1Click:connect(function()
 		script.Parent.Parent.MainFrame.Visible = true
 		script.Parent.Parent.UniversalFrame.Visible = false
 		script.Parent.Parent.FunFrame.Visible = false
+		script.Parent.Parent.scriptFrame.Visible = false
 		wait(0.1)
 	end)
 end
-coroutine.wrap(RVMUUGZ_fake_script)()
-local function BHJJASC_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('SQHHhOpslYdIvCjBEJAZgovHEYxHpdIlouIrVyiyEgPLWWzfquonNuRTG9jYWxTY3JpcHQ='), TextButton)
+coroutine.wrap(UFIM_fake_script)()
+local function JZDPUS_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('mRHvFeoDDLquqYQGkorBqaAiYppyasPFlRBqdUldKRbUquEYoIUMRUATG9jYWxTY3JpcHQ='), TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('CcYytuYiScaXIKnjabnbyjAjhaLonTYcUayKqwoREVvAKDsftiqsdPOaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JlYmVwcm8vc2NyaXB0Mi1za2luL3JlZnMvaGVhZHMvbWFpbi9zY3JpcHQyJTIwc2tpbg==')))()
-	end)
-end
-coroutine.wrap(BHJJASC_fake_script)()
-local function HGAVOX_fake_script() -- TextButton_2.LocalScript 
-	local script = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('QesCavKvoWJzuvQSegeQXrawdltsatmtPOFgZnRUwaEQCgCgTdhlNjrTG9jYWxTY3JpcHQ='), TextButton_2)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('vYsfQcMgGrAygdugGwhmfYTIfGOSTfwQdiaOPcyUXekkxkGxtFcdWHOaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2ZhaXNhbDE0MzIxNTIvc2hhZG93LWd1aS9tYWluL3NoYWRvd2d1aQ==')))()
-	end)
-end
-coroutine.wrap(HGAVOX_fake_script)()
-local function MORZXK_fake_script() -- TextButton_3.LocalScript 
-	local script = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('LuWqGbSBcuFzRKCVUkJgcPLRNLsFEdEHLMTlJBQPoDTeoNsSYdoGTpRTG9jYWxTY3JpcHQ='), TextButton_3)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('ucPWCJQjsLxNatbyrrkXtUlsivfpnGYXhLIPVZAQuQJlooArwsCiHPhaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2Nvb2w1MDEzL1RCTy9tYWluL1RCT3NjcmlwdA==')))()
-	end)
-end
-coroutine.wrap(MORZXK_fake_script)()
-local function CKSQEBN_fake_script() -- TextButton_4.LocalScript 
-	local script = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('JVaBfNeewhsOxDQhadeIWwopGdSezksWxKZVGJnNXdyZWncpzUoBIeJTG9jYWxTY3JpcHQ='), TextButton_4)
-
-	script.Parent.MouseButton1Click:Connect(function()
+		-- Get the necessary services
+		local UserInputService = game:GetService(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('ftYvvdNsyhmqSgZQTXcHqKeNrlHTSDryapUxkoDxlbAuosujNzxVVNXVXNlcklucHV0U2VydmljZQ=='))
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoidRootPart = character:WaitForChild(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('VRwLYfhdULBygPTSifzLSYrkafjgUiPXlBgIURKQDvOXcqtjgDlWCvdSHVtYW5vaWRSb290UGFydA=='))
 	
-		loadstring(game:HttpGet(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('TywvolZpTXCTSmuLhlWhzMGCxhbrVFsAzZSdmEdrfJpeoMaJkHCaKVeaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JlYmVwcm8vc2NyaXB0L3JlZnMvaGVhZHMvbWFpbi9zY3JpcHQ=')))()
+		-- Toggle variable to check if teleporting is active
+		local teleporting = false
+	
+		-- Function to teleport the player to a random position
+		local function teleportRandomly()
+			while teleporting do
+				-- Get the current position of the player
+				local currentPosition = humanoidRootPart.Position
+	
+				-- Generate random values for X, Y, and Z within a range of -10 to 10
+				local randomX = math.random(-10, 15)
+				local randomY = math.random(-10, 35) -- Allow teleporting up and down
+				local randomZ = math.random(-10, 15)
+	
+				-- Calculate the new position by adding random values to the current position
+				local newPosition = currentPosition + Vector3.new(randomX, randomY, randomZ)
+	
+				-- Teleport the player to the new position
+				humanoidRootPart.CFrame = CFrame.new(newPosition)
+	
+				-- Wait a short amount of time before teleporting again
+				wait(0.1) -- Adjust this value to control how fast teleporting happens
+			end
+		end
+	
+		-- Function to handle the pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('vEmlDoTBqUJRdQsqveYQrYPbgkWhsrVICThpTTnrXyRezVVqFrBQixFWQ==') key press and toggle teleporting
+		local function onKeyPress(input)
+			-- Check if the key pressed is pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('AajKjVKcULuhHtPTxRqUUbfdummYGWUmuWzPKQXAfIoZwvcHphjsKMBWQ==')
+			if input.KeyCode == Enum.KeyCode.Y then
+				-- Toggle the teleporting state
+				teleporting = not teleporting
+	
+				-- If teleporting is enabled, start the teleport loop
+				if teleporting then
+					teleportRandomly()
+				end
+			end
+		end
+	
+		-- Connect the key press event to the function
+		UserInputService.InputBegan:Connect(onKeyPress)
 	end)
 end
-coroutine.wrap(CKSQEBN_fake_script)()
-local function WQGN_fake_script() -- TextButton_5.LocalScript 
-	local script = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('BrBedlWqQwmPiSAVNvNFPLQPIDiPhrplexRXeewHDXsySsqJRENaOpDTG9jYWxTY3JpcHQ='), TextButton_5)
+coroutine.wrap(JZDPUS_fake_script)()
+local function PFHGXTL_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('sYPoQjSwmmwDJSbMkepeBXQqhDlPkyiafuEuYfWyrTYikohLieAiVsXTG9jYWxTY3JpcHQ='), TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('LRvYwUUvsbgQtqNuDacTiEAcFLXIExyQTUKShQRvyXCgdFWeyzDzzDqaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JlYmVwcm8vc2NyaXB0Mi1za2luL3JlZnMvaGVhZHMvbWFpbi9zY3JpcHQyJTIwc2tpbg==')))()
+	end)
+end
+coroutine.wrap(PFHGXTL_fake_script)()
+local function FBWL_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('LoKkRzZvhpuYknCdqWpmyXvAsDxMvikaRNTuHFvDIrHanbybaxLJJYBTG9jYWxTY3JpcHQ='), TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end)
+end
+coroutine.wrap(FBWL_fake_script)()
+local function CEHD_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('cnvXSBQJOBhSuGWJtYyoLJNwJLyVukMDjCWJEpDBOPQtmXUGOPhepVZTG9jYWxTY3JpcHQ='), TextButton_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('TZPVRhHjOFBfwgZFqOUOTLritHdOMFDAaVKxPFWRlLPyGMCASmSWzRDaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JlYmVwcm8vbGVnaW9uL3JlZnMvaGVhZHMvbWFpbi9sZWdpb24=')))()
+	end)
+end
+coroutine.wrap(CEHD_fake_script)()
+local function FSQI_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('EKrhTueAqNoDGUDIHNfFLciJawxJifzvSWybuvPSrWGqOzGxyzpLvdLTG9jYWxTY3JpcHQ='), TextButton_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('YyQMjerDJmIhFUJvnsuMVxTIFTzvjsiXEoFfRcvLbbQkYWllLpdZUxSaHR0cHM6Ly9mbG9vcGllLnVrL3Byb2plY3RzL3ByaXZhdGVwcm9qZWN0cy9zY3JpcHRzL2NvbnRyb2wubHVh')))()
+	end)
+end
+coroutine.wrap(FSQI_fake_script)()
+local function BNUVXWU_fake_script() -- FunFramebut.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('WAEscgFLQhqIHkWjqrUImCniKIjHPnZDnLevHptcrhngdtQHNbhfOqkTG9jYWxTY3JpcHQ='), FunFramebut)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.UniversalFrame.Visible = false
+		script.Parent.Parent.FunFrame.Visible = true
+		script.Parent.Parent.scriptFrame.Visible = false
+		wait(0.1)
+	end)
+end
+coroutine.wrap(BNUVXWU_fake_script)()
+local function DGCU_fake_script() -- scriptFramebut.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('AuZXMycXPasrCbyiaPgEmOQAAnSMjgiiERfqvHIuqGEnjxAqCUulJrfTG9jYWxTY3JpcHQ='), scriptFramebut)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.UniversalFrame.Visible = false
+		script.Parent.Parent.FunFrame.Visible = false
+		script.Parent.Parent.scriptFrame.Visible = true
+		wait(0.1)
+	end)
+end
+coroutine.wrap(DGCU_fake_script)()
+local function DKEZ_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('sOqRuSYZVAFZXIeiWaiGdsRfbbUGlvwalcOpDvhTyjlGqgmwqsAcnkDTG9jYWxTY3JpcHQ='), TextButton_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
 	 --[[
@@ -325,73 +451,62 @@ local function WQGN_fake_script() -- TextButton_5.LocalScript
 	█▄░█ █▀▀ █▄▄ █░█ █░░ ▄▀█  █▀ █▀█ ▄▀█ █▀▀ █▀▀
 	█░▀█ ██▄ █▄█ █▄█ █▄▄ █▀█  ▄█ █▀▀ █▀█ █▄▄ ██▄
 	--]]
-		loadstring(game:HttpGet(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('skMUbhTKVPkPIbNAUKoWybVddBDyFvZgDVCtWfVxaduMSIzYvIiXWvWaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FjdHlybi9TY3JpcHRzL21haW4vQXp1cmVNb2RkZWQ=')))()
+		loadstring(game:HttpGet(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('SBZDxhXbwaKQJULRLSrluzPDytiFbTSNDsbEeENyVWjKEHRmGXgZoacaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FjdHlybi9TY3JpcHRzL21haW4vQXp1cmVNb2RkZWQ=')))()
 	end)
 end
-coroutine.wrap(WQGN_fake_script)()
-local function SOKU_fake_script() -- TextButton_6.LocalScript 
-	local script = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('FGnsKeMIXZxcLkVicwUgxxjApdVHRQExqTCdNqkZipPfYPJhcSannUaTG9jYWxTY3JpcHQ='), TextButton_6)
+coroutine.wrap(DKEZ_fake_script)()
+local function RKVJ_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('tqAhDOeMgfHlQSjmgJXHYYCcFiOOnKDhGiMLvfPwJOOIqVkDfUAJFeOTG9jYWxTY3JpcHQ='), TextButton_7)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('EwOMiztmmVaHuVDYGJDNBrBNDbIzFcrFVMUENLHHZCNrqOKFYjTPqOFaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2Nvb2w1MDEzL1RCTy9tYWluL1RCT3NjcmlwdA==')))()
+	end)
+end
+coroutine.wrap(RKVJ_fake_script)()
+local function AMYORF_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('oMisUzjjbMsPNYwSWcjTxbpsKtAnUhbUmocBLKHaoDDvreYnkhmUViQTG9jYWxTY3JpcHQ='), TextButton_8)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('DKCtmByNxLjzTEuPQhsLzXoOaGHJKQDvFzHsXSwNoKcXmCsGjDrDGkXaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2ZhaXNhbDE0MzIxNTIvc2hhZG93LWd1aS9tYWluL3NoYWRvd2d1aQ==')))()
+	end)
+end
+coroutine.wrap(AMYORF_fake_script)()
+local function TSHKZ_fake_script() -- TextButton_9.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('ebXkLlLTdcDTpoNWzesINNCvhPByJHbtaadZMcKxyScCiuWfeBIlJiQTG9jYWxTY3JpcHQ='), TextButton_9)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		local plr = game.Players.LocalPlayer
-		local tool = plr.Character:FindFirstChildOfClass(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('EQoXFoQcyaWsyRXxxxlFjAtmBMPzsowprHewkbRoxZbfjlOwyvGzOUPVG9vbA=='))
+		local tool = plr.Character:FindFirstChildOfClass(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('IiMRoOPiQXlEpJEUZnYGdFtVuoXGDCnWSXDFcCnzaHHBKFcVGXfgPbKVG9vbA=='))
 	
 		tool.Parent = plr.Backpack
 		tool.GripPos = Vector3.new(0,-9,-3) --put numbers in there where it says 0,5,0 replace them with your own to make the tool move
 		tool.Parent = plr.Character
 	end)
 end
-coroutine.wrap(SOKU_fake_script)()
-local function UFQE_fake_script() -- TextButton_7.LocalScript 
-	local script = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('kkxpwBNSoPEgkdafRWYYJmRBOZHEcrPkSNyciMBtifYPWNKCmpeYFGQTG9jYWxTY3JpcHQ='), TextButton_7)
+coroutine.wrap(TSHKZ_fake_script)()
+local function LBUNGVV_fake_script() -- TextButton_10.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('zNySSbvEgMeLzTMpYGOkzhACBZfqyEkJjnYkDpnZEnKAkzjebrzxvhTTG9jYWxTY3JpcHQ='), TextButton_10)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('jxkBdThbRYgkUJuaDiMehMjsFdIlTlqaodCZqsjvCCGcKJSlohYMAmIaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JlYmVwcm8vc2NyaXB0Mi1za2luL3JlZnMvaGVhZHMvbWFpbi9zY3JpcHQyJTIwc2tpbg==')))()
+		loadstring(game:HttpGet(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('BlMxnOjOxCkWOOEjlDccUooZxECJAQOuNpQYbYEolUyNNpGOpQHZdQkaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JlYmVwcm8vc2NyaXB0L3JlZnMvaGVhZHMvbWFpbi9zY3JpcHQ=')))()
 	end)
 end
-coroutine.wrap(UFQE_fake_script)()
-local function SEVS_fake_script() -- TextButton_8.LocalScript 
-	local script = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('GHZrmwbVrgQpoupOuLGdzkROWNjHsUVRJRdCKLCCuBJummzXEgRjMtRTG9jYWxTY3JpcHQ='), TextButton_8)
+coroutine.wrap(LBUNGVV_fake_script)()
+local function GXEYG_fake_script() -- TextButton_11.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('bMWPMOGsHVOuhUSYNDbwraKfqNgBWkinqBahrzYzQLyDewVFjYBaYFyTG9jYWxTY3JpcHQ='), TextButton_11)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+		loadstring(game:HttpGet(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('fxERQRplFnzFQczRdoLmqAKptbbFxWzAVJFSOnwXRxjfiFWDysprphwaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JlYmVwcm8vc2NyaXB0Mi1za2luL3JlZnMvaGVhZHMvbWFpbi9zY3JpcHQyJTIwc2tpbg==')))()
 	end)
 end
-coroutine.wrap(SEVS_fake_script)()
-local function VCORAIQ_fake_script() -- TextButton_9.LocalScript 
-	local script = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('pJqUuwIhOhZLtlrfCibYegrrcXzLFtlwFPKBtHBJTNhYtlPPiPIygWfTG9jYWxTY3JpcHQ='), TextButton_9)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('dUZJgBGhcCVXbcLrNbWAasDSLWOKiJxmphsLMGxCofwfvTPxhQRRpLBaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JlYmVwcm8vbGVnaW9uL3JlZnMvaGVhZHMvbWFpbi9sZWdpb24=')))()
-	end)
-end
-coroutine.wrap(VCORAIQ_fake_script)()
-local function BHXL_fake_script() -- TextButton_10.LocalScript 
-	local script = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('UuhlQjYcCzJoZsLivjFhznHbHbrUSWohEbdcqkJIZDbkbNTGaOgaVGGTG9jYWxTY3JpcHQ='), TextButton_10)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('cQgMNnZRxkdOYuhfElpNLtbkZktuCUnqgpGlEWZvYWdyvzkpUVRsJJwaHR0cHM6Ly9mbG9vcGllLnVrL3Byb2plY3RzL3ByaXZhdGVwcm9qZWN0cy9zY3JpcHRzL2NvbnRyb2wubHVh')))()
-	end)
-end
-coroutine.wrap(BHXL_fake_script)()
-local function SUORE_fake_script() -- FunFramebut.LocalScript 
-	local script = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('AefpAukziaLbUicZxFFXSBjhTMrOTqePNJwzmTvsLjgowmfQovbaInKTG9jYWxTY3JpcHQ='), FunFramebut)
-
-	script.Parent.MouseButton1Click:connect(function()
-		script.Parent.Parent.MainFrame.Visible = false
-		script.Parent.Parent.UniversalFrame.Visible = false
-		script.Parent.Parent.FunFrame.Visible = true
-		wait(0.1)
-	end)
-end
-coroutine.wrap(SUORE_fake_script)()
-local function DVNKT_fake_script() -- TextButton_11.LocalScript 
-	local script = Instance.new(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('SyzEIblfbimphPPXZtrDHuQIyyRlhICpYcdhCPUbHWrWaTAYdqJaMFSTG9jYWxTY3JpcHQ='), TextButton_11)
+coroutine.wrap(GXEYG_fake_script)()
+local function XTHCJX_fake_script() -- TextButton_12.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('wpGjwjGDIxKdgbMzXitJERoYQmRlHcGjJKDzTdsymxGcJUiVvyOYbmDTG9jYWxTY3JpcHQ='), TextButton_12)
 
 	local frame = script.Parent.Parent.Frame --in the .frame - you should need to change it what is your frame name.
 	local hotkey = Enum.KeyCode.LeftAlt --Change your keybind you want.
 	
-	local UIS = game:GetService(MdLuGtCyAGVypknYfjrUaHHaCwgOzaCziBXTQTGnWGtYGrnZtOMQXhmrpGjofynGqRAhd('wlViMNwKJFNehikJToqNEpMxvHxzTVgHYUzqrRWnMdSTDWmJwLHfMWZVXNlcklucHV0U2VydmljZQ=='))
+	local UIS = game:GetService(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('QqrRjutDVvcjRpioSWcTMNBtrUWCBLQmzCcwyQyHuOyXWpKrQcUhCTiVXNlcklucHV0U2VydmljZQ=='))
 	local open = false
 	
 	
@@ -410,5 +525,12 @@ local function DVNKT_fake_script() -- TextButton_11.LocalScript
 		end
 	end)
 end
-coroutine.wrap(DVNKT_fake_script)()
+coroutine.wrap(XTHCJX_fake_script)()
+local function YHKNOK_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new(pwHBBQQLugWmnJiMeeRvFckrXoqPbbVgmyNtEDsQtdol('egucsvETdWRbVehBHmyjkgfNuCfuttGAYsXjePwXwoSuIyBrajCZTstTG9jYWxTY3JpcHQ='), TextLabel)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(YHKNOK_fake_script)()
     
